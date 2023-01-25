@@ -1,4 +1,4 @@
-<table>
+<table class>
   <tr>
     <td>
       Titulo
@@ -9,11 +9,11 @@
   </tr>
   @foreach (var item in Model)
   {
-  <tr>
-    <td>
-      @item.Titulo
-      </td>
-      <td>
-
-  
+  <table>
+    <tr>
+       <td>@item.Titulo</td>
+       <td>@item.Descricao</td>
+    <tr>
+  </table>
+ 
   }
